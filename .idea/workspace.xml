@@ -4,29 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2f08290-cf2e-4c92-b3db-e506f32302a8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/AddressGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/CourierGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/DeliveryCompanyGeneratorApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/DeliveryGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/PacketGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/PersonGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/PickupPointGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/PromotionGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/ReceiverGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/SenderGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/SupplierGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/TimeGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/VehicleGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/WarehouseGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/dmuszynski/deliverycompany/DeliveryCompanyGeneratorAppTest.java" afterDir="false" />
+    <list default="true" id="db4ce15e-a225-4347-8c19-621ebbf9eccf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,16 +31,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/dmusz/OneDrive/Pulpit/Git/DeliveryCompanyGenerator",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/dmusz/OneDrive/Pulpit/Git/DeliveryCompanyGenerator&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="pl.dmuszynski.deliverycompany.generator.DeliveryCompanyGeneratorApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.dmuszynski.deliverycompany.generator.DeliveryCompanyGeneratorApp" />
