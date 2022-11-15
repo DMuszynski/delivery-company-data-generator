@@ -1,6 +1,8 @@
 package pl.dmuszynski.deliverycompany.generator;
 
 
+import pl.dmuszynski.deliverycompany.data.Delivery;
+
 import java.util.List;
 
 public class DeliveryCompanyGeneratorApp {
