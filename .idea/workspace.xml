@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e2f08290-cf2e-4c92-b3db-e506f32302a8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/AddressGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/CourierGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/DeliveryCompanyGeneratorApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/DeliveryGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/PacketGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/PersonGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/PickupPointGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/PromotionGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/ReceiverGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/SenderGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/SupplierGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/TimeGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/VehicleGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/WarehouseGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/dmuszynski/deliverycompany/DeliveryCompanyGeneratorAppTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GafYG9kg7sz3l3bRcL535DdBxk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/dmusz/OneDrive/Pulpit/Git/DeliveryCompanyGenerator",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="pl.dmuszynski.deliverycompany.generator.DeliveryCompanyGeneratorApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.dmuszynski.deliverycompany.generator.DeliveryCompanyGeneratorApp" />
+      <module name="DeliveryCompanyGenerator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.dmuszynski.deliverycompany.generator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.pl.dmuszynski.deliverycompany.generator.DeliveryCompanyGeneratorApp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e2f08290-cf2e-4c92-b3db-e506f32302a8" name="Changes" comment="" />
+      <created>1666631665712</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666631665712</updated>
+      <workItem from="1666631668716" duration="6837000" />
+      <workItem from="1666817374871" duration="3921000" />
+      <workItem from="1666970945081" duration="6358000" />
+      <workItem from="1667409654555" duration="5419000" />
+      <workItem from="1667495798699" duration="9105000" />
+      <workItem from="1667582930182" duration="58000" />
+      <workItem from="1667662807025" duration="1634000" />
+      <workItem from="1667694366144" duration="1335000" />
+      <workItem from="1667731180478" duration="2023000" />
+      <workItem from="1667736142562" duration="19000" />
+      <workItem from="1667740905011" duration="938000" />
+      <workItem from="1668540674625" duration="4899000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
