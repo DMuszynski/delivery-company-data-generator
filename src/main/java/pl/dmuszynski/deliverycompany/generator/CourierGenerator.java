@@ -1,5 +1,8 @@
 package pl.dmuszynski.deliverycompany.generator;
 
+import pl.dmuszynski.deliverycompany.data.Courier;
+import pl.dmuszynski.deliverycompany.data.Person;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,28 +22,3 @@ public class CourierGenerator {
     }
 }
 
-class Courier {
-    private final long idCourier;
-    private final Person person;
-
-    public Courier(long idCourier, Person person) {
-        this.idCourier = idCourier;
-        this.person = person;
-    }
-
-    public long getIdCourier() {
-        return idCourier;
-    }
-
-    public Person getPerson() {
-        return person;
-    }
-
-    @Override
-    public String toString() {
-        return "Courier{" +
-                "idCourier=" + idCourier +
-                ", person=" + person +
-                '}';
-    }
-}

@@ -1,6 +1,7 @@
 package pl.dmuszynski.deliverycompany.generator;
 
 import com.github.javafaker.Faker;
+import pl.dmuszynski.deliverycompany.data.Address;
 
 import java.util.Locale;
 
@@ -16,35 +17,3 @@ public class AddressGenerator {
     }
 }
 
-class Address{
-    private final String street;
-    private final String city;
-    private final String buildingNumber;
-
-    public Address(String street, String city, String buildingNumber) {
-        this.street = street;
-        this.city = city;
-        this.buildingNumber = buildingNumber;
-    }
-
-    public String getStreet() {
-        return street;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public String getBuildingNumber() {
-        return buildingNumber;
-    }
-
-    @Override
-    public String toString() {
-        return "Address{" +
-                "street='" + street + '\'' +
-                ", city='" + city + '\'' +
-                ", buildingNumber='" + buildingNumber + '\'' +
-                '}';
-    }
-}

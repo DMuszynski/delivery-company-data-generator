@@ -19,7 +19,7 @@ public class Warehouse {
 
     @Override
     public String toString() {
-        return "ShippingPlace{" +
+        return "Warehouse{" +
                 "idWarehouse=" + idWarehouse +
                 ", address=" + address +
                 '}';

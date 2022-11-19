@@ -1,5 +1,8 @@
 package pl.dmuszynski.deliverycompany.generator;
 
+import pl.dmuszynski.deliverycompany.data.Address;
+import pl.dmuszynski.deliverycompany.data.PickupPoint;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,28 +22,3 @@ public class PickupPointGenerator {
     }
 }
 
-class PickupPoint {
-    private final long idPickupPoint;
-    private final Address address;
-
-    public PickupPoint(long idPickupPoint, Address address) {
-        this.idPickupPoint = idPickupPoint;
-        this.address = address;
-    }
-
-    public long getIdPickupPoint() {
-        return idPickupPoint;
-    }
-
-    public Address getAddress() {
-        return address;
-    }
-
-    @Override
-    public String toString() {
-        return "PickupPlace{" +
-                "idPickupPoint=" + idPickupPoint +
-                ", address=" + address +
-                '}';
-    }
-}

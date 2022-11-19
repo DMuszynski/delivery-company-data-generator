@@ -1,5 +1,8 @@
 package pl.dmuszynski.deliverycompany.generator;
 
+import pl.dmuszynski.deliverycompany.data.Address;
+import pl.dmuszynski.deliverycompany.data.Warehouse;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,28 +22,3 @@ public class WarehouseGenerator {
     }
 }
 
-class Warehouse {
-    private final long idWarehouse;
-    private final Address address;
-
-    public Warehouse(long idWarehouse, Address address) {
-       this.idWarehouse = idWarehouse;
-       this.address = address;
-    }
-
-    public long getIdWarehouse() {
-        return idWarehouse;
-    }
-
-    public Address getAddress() {
-        return address;
-    }
-
-    @Override
-    public String toString() {
-        return "ShippingPlace{" +
-                "idWarehouse=" + idWarehouse +
-                ", address=" + address +
-                '}';
-    }
-}

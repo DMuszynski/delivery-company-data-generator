@@ -1,5 +1,8 @@
 package pl.dmuszynski.deliverycompany.generator;
 
+import pl.dmuszynski.deliverycompany.data.Person;
+import pl.dmuszynski.deliverycompany.data.Sender;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,31 +19,5 @@ public class SenderGenerator {
         for(int i = 0; i < senderQuantity; ++i)
             randomSenderList.add(this.getRandomSender(i));
         return randomSenderList;
-    }
-}
-
-class Sender {
-    private final long idSender;
-    private final Person person;
-
-    public Sender(long idSender, Person person) {
-        this.idSender = idSender;
-        this.person = person;
-    }
-
-    public long getIdSender() {
-        return idSender;
-    }
-
-    public Person getPerson() {
-        return person;
-    }
-
-    @Override
-    public String toString() {
-        return "Sender{" +
-                "idSender=" + idSender +
-                ", person=" + person +
-                '}';
     }
 }
