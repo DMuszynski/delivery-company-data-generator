@@ -4,14 +4,17 @@ import com.opencsv.CSVWriter;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
-public class OpenCsvWriter {
+public final class OpenCsvWriter {
 
-    public static void writeDeliveryToCsv(String path, String filename) {
-        List<String[]> csvData = new ArrayList<>();
+    private static final String CSV_FOLDER_DIR = System.getProperty("user.dir") + "\\src\\main\\resources\\csv\\";
 
+    public static void writeDataToDefaultFolder(List<String[]> csvData, String filename) {
+        writeData(csvData, CSV_FOLDER_DIR, filename);
+    }
+
+    public static void writeData(List<String[]> csvData, String path, String filename) {
         try (CSVWriter writer = new CSVWriter(new FileWriter(path + filename))) {
             writer.writeAll(csvData);
         } catch (IOException e) {
