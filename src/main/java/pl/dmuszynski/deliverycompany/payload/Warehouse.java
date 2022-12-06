@@ -1,4 +1,4 @@
-package pl.dmuszynski.deliverycompany.data;
+package pl.dmuszynski.deliverycompany.payload;
 
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -10,6 +10,8 @@ import lombok.ToString;
 @EqualsAndHashCode
 @AllArgsConstructor
 public class Warehouse {
-    private long idWarehouse;
-    private Address address;
+    private final long idWarehouse;
+    private final String street;
+    private final String city;
+    private final String buildingNumber;
 }

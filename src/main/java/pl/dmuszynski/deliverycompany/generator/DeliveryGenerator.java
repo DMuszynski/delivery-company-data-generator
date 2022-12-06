@@ -1,6 +1,7 @@
 package pl.dmuszynski.deliverycompany.generator;
 
 import pl.dmuszynski.deliverycompany.data.*;
+import pl.dmuszynski.deliverycompany.data.Packet;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +18,8 @@ public class DeliveryGenerator {
     private final PickupPointGenerator pickupPointGenerator = new PickupPointGenerator();
     private final CourierGenerator courierGenerator = new CourierGenerator();
     private final VehicleGenerator vehicleGenerator = new VehicleGenerator();
-    private final Random rand = new Random();
+
+    private final Random random = new Random();
 
     public List<Delivery> generateRandomDeliveryList
             (int deliveryQuantity, int packetQuantity, int timeQuantity, int receiverQuantity,
@@ -36,20 +38,21 @@ public class DeliveryGenerator {
         final List<Courier> courierList = this.courierGenerator.getRandomCourierList(courierQuantity);
         final List<Vehicle> vehicleList = this.vehicleGenerator.getRandomVehicleList(vehicleQuantity);
 
-        for(int i = 0; i < deliveryQuantity; ++i) {
-            final Packet packet = packetList.get(rand.nextInt(packetList.size()));
-            final Promotion promotion = promotionList.get(rand.nextInt(promotionList.size()));
-            final Time time = timeList.get(rand.nextInt(timeList.size()));
-            final Receiver receiver = receiverList.get(rand.nextInt(receiverList.size()));
-            final Sender sender = senderList.get(rand.nextInt(senderList.size()));
-            final Supplier supplier = supplierList.get(rand.nextInt(supplierList.size()));
-            final Warehouse warehouse = warehouseList.get(rand.nextInt(warehouseList.size()));
-            final PickupPoint pickupPoint = pickupPointList.get(rand.nextInt(pickupPointList.size()));
-            final Courier courier = courierList.get(rand.nextInt(courierList.size()));
-            final Vehicle vehicle = vehicleList.get(rand.nextInt(vehicleList.size()));
-            deliveryList.add(new Delivery(i, packet,promotion,time, receiver, sender, supplier,
-                    warehouse, pickupPoint, courier, vehicle));
-        }
+        for(int i = 0; i < deliveryQuantity; ++i)
+            deliveryList.add(Delivery.builder()
+                    .idDelivery(i)
+                    .packet(packetList.get(random.nextInt(packetList.size())))
+                    .promotion(promotionList.get(random.nextInt(promotionList.size())))
+                    .time(timeList.get(random.nextInt(timeList.size())))
+                    .receiver(receiverList.get(random.nextInt(receiverList.size())))
+                    .sender(senderList.get(random.nextInt(senderList.size())))
+                    .supplier(supplierList.get(random.nextInt(supplierList.size())))
+                    .warehouse(warehouseList.get(random.nextInt(warehouseList.size())))
+                    .pickupPoint(pickupPointList.get(random.nextInt(pickupPointList.size())))
+                    .courier(courierList.get(random.nextInt(courierList.size())))
+                    .vehicle(vehicleList.get(random.nextInt(vehicleList.size())))
+                    .build());
+
         return deliveryList;
     }
 }

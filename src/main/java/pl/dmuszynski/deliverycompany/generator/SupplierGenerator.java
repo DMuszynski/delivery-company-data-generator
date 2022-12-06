@@ -26,10 +26,6 @@ public class SupplierGenerator {
         return tmpSupplierList;
     }
 
-    public Supplier getRandomSupplier() {
-        return supplierList.get(new Random().nextInt(supplierList.size()));
-    }
-
     public List<Supplier> getSupplierList() {
         return supplierList;
     }

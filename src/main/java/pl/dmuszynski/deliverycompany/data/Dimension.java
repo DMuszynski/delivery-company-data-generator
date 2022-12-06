@@ -9,7 +9,8 @@ import lombok.ToString;
 @ToString
 @EqualsAndHashCode
 @AllArgsConstructor
-public class Warehouse {
-    private long idWarehouse;
-    private Address address;
+public class Dimension {
+    private int length;
+    private int width;
+    private int height;
 }

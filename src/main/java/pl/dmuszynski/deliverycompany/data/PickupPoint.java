@@ -1,27 +1,15 @@
 package pl.dmuszynski.deliverycompany.data;
 
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.ToString;
+
+@Getter
+@ToString
+@EqualsAndHashCode
+@AllArgsConstructor
 public class PickupPoint {
-    private final long idPickupPoint;
-    private final Address address;
-
-    public PickupPoint(long idPickupPoint, Address address) {
-        this.idPickupPoint = idPickupPoint;
-        this.address = address;
-    }
-
-    public long getIdPickupPoint() {
-        return idPickupPoint;
-    }
-
-    public Address getAddress() {
-        return address;
-    }
-
-    @Override
-    public String toString() {
-        return "PickupPlace{" +
-                "idPickupPoint=" + idPickupPoint +
-                ", address=" + address +
-                '}';
-    }
+    private long idPickupPoint;
+    private Address address;
 }

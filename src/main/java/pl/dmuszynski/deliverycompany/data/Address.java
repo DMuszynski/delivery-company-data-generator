@@ -1,34 +1,16 @@
 package pl.dmuszynski.deliverycompany.data;
 
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.ToString;
+
+@Getter
+@ToString
+@EqualsAndHashCode
+@AllArgsConstructor
 public class Address {
-    private final String street;
-    private final String city;
-    private final String buildingNumber;
-
-    public Address(String street, String city, String buildingNumber) {
-        this.street = street;
-        this.city = city;
-        this.buildingNumber = buildingNumber;
-    }
-
-    public String getStreet() {
-        return street;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public String getBuildingNumber() {
-        return buildingNumber;
-    }
-
-    @Override
-    public String toString() {
-        return "Address{" +
-                "street='" + street + '\'' +
-                ", city='" + city + '\'' +
-                ", buildingNumber='" + buildingNumber + '\'' +
-                '}';
-    }
+    private String street;
+    private String city;
+    private String buildingNumber;
 }

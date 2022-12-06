@@ -6,10 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-/**
- * Promotion generator
- */
 public class PromotionGenerator {
+    private final Random random = new Random();
     private final List<Promotion> promotionList;
     private final String[] promotionType = {
             "Immediate offers and discounts",
@@ -26,13 +24,9 @@ public class PromotionGenerator {
     private List<Promotion> initPromotionList() {
         final List<Promotion> tmpPromotionList = new ArrayList<>(this.promotionType.length);
         for (int i = 0; i < this.promotionType.length; ++i)
-            tmpPromotionList.add(new Promotion(i+1, (short) new Random().nextInt(100), promotionType[i]));
+            tmpPromotionList.add(new Promotion(i+1, (short) random.nextInt(100), promotionType[i]));
 
         return tmpPromotionList;
-    }
-
-    public Promotion getRandomPromotion() {
-        return promotionList.get(new Random().nextInt(promotionList.size()));
     }
 
     public List<Promotion> getRandomPromotionList() {

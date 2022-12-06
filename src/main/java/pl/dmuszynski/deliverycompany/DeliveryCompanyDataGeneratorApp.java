@@ -7,7 +7,6 @@ import pl.dmuszynski.deliverycompany.data.Time;
 import pl.dmuszynski.deliverycompany.generator.DeliveryGenerator;
 import pl.dmuszynski.deliverycompany.generator.TimeGenerator;
 
-import java.util.Arrays;
 import java.util.List;
 
 public class DeliveryCompanyDataGeneratorApp {
@@ -23,7 +22,7 @@ public class DeliveryCompanyDataGeneratorApp {
         TimeGenerator timeGenerator = new TimeGenerator();
         List<Time> timeList = timeGenerator.getRandomTimeList(5);
 
-        ObjectCsvFormatMapper<Time> timeCsvFormatMapper = new ObjectCsvFormatMapper<>();
-        OpenCsvWriter.writeDataToDefaultFolder(timeCsvFormatMapper.createCsvData(timeList, Time.class), "time.csv");
+        ObjectCsvFormatMapper<Delivery> timeCsvFormatMapper = new ObjectCsvFormatMapper<>();
+        OpenCsvWriter.writeDataToDefaultFolder(timeCsvFormatMapper.createCsvData(deliveryList, Delivery.class), "time.csv");
     }
 }

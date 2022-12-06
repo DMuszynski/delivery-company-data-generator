@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class ObjectCsvFormatMapper<T> {
+public final class ObjectCsvFormatMapper<T> {
 
     public List<String[]> createCsvData(List<T> mappedObject, Class<T> type) {
         final String[] header = this.getCsvHeader(type);
@@ -16,7 +16,7 @@ public class ObjectCsvFormatMapper<T> {
         return csvDataList;
     }
 
-    protected String[] getCsvHeader(Class<T> type) {
+    private String[] getCsvHeader(Class<T> type) {
         final Field[] csvHeaderFields = type.getDeclaredFields();
         final String[] csvHeaderStringList = new String[csvHeaderFields.length];
 
@@ -26,7 +26,7 @@ public class ObjectCsvFormatMapper<T> {
         return csvHeaderStringList;
     }
 
-    protected String[] getCsvRecord(T object) {
+    private String[] getCsvRecord(T object) {
         final Field[] objectFields = object.getClass().getDeclaredFields();
         Arrays.stream(objectFields).forEach(field -> field.setAccessible(true));
 

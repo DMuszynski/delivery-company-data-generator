@@ -8,7 +8,8 @@ import java.util.List;
 
 public final class OpenCsvWriter {
 
-    private static final String CSV_FOLDER_DIR = System.getProperty("user.dir") + "\\src\\main\\resources\\csv\\";
+    private static final String PROJECT_DIR = System.getProperty("user.dir");
+    private static final String CSV_FOLDER_DIR = PROJECT_DIR + "\\src\\main\\resources\\csv\\";
 
     public static void writeDataToDefaultFolder(List<String[]> csvData, String filename) {
         writeData(csvData, CSV_FOLDER_DIR, filename);

@@ -1,27 +1,15 @@
 package pl.dmuszynski.deliverycompany.data;
 
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.ToString;
+
+@Getter
+@ToString
+@EqualsAndHashCode
+@AllArgsConstructor
 public class Receiver {
-    private final long idReceiver;
-    private final Person person;
-
-    public Receiver(long idReceiver, Person person) {
-        this.idReceiver = idReceiver;
-        this.person = person;
-    }
-
-    public long getIdReceiver() {
-        return idReceiver;
-    }
-
-    public Person getPerson() {
-        return person;
-    }
-
-    @Override
-    public String toString() {
-        return "Receiver{" +
-                "idReceiver=" + idReceiver +
-                ", person=" + person +
-                '}';
-    }
+    private long idReceiver;
+    private Person person;
 }
