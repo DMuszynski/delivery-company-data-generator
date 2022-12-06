@@ -5,35 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db4ce15e-a225-4347-8c19-621ebbf9eccf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/data/Dimension.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/DimensionGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/payload/PickupPointDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/DeliveryCompanyDataGeneratorApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/DeliveryCompanyDataGeneratorApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/csv/OpenCsvWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/csv/OpenCsvWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/csv/datamapper/ObjectCsvFormatMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/csv/datamapper/ObjectCsvFormatMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/data/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/data/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/data/Courier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/data/Courier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/data/Delivery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/data/Delivery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/data/Packet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/data/Packet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/data/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/data/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/data/PickupPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/data/PickupPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/data/Promotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/data/Promotion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/data/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/data/Receiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/data/Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/data/Sender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/data/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/data/Supplier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/data/Time.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/data/Time.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/data/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/data/Vehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/data/Warehouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/data/Warehouse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/DeliveryGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/DeliveryGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/PacketGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/PacketGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/PersonGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/PersonGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/PromotionGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/PromotionGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/SupplierGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/SupplierGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/VehicleGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/VehicleGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/csv/time.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/csv/time.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/dmuszynski/deliverycompany/DeliveryCompanyDataGeneratorAppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/dmuszynski/deliverycompany/DeliveryCompanyGeneratorAppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/payload/CourierDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/payload/CourierDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/payload/DeliveryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/payload/DeliveryDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/payload/PackageDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/payload/PackageDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/payload/PickupPointDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/payload/PickupPointDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/payload/PromotionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/payload/PromotionDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/payload/ReceiverDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/payload/ReceiverDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/payload/SenderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/payload/SenderDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/payload/SupplierDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/payload/SupplierDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/payload/TimeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/payload/TimeDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/payload/VehicleDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/payload/VehicleDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/payload/Warehouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/payload/Warehouse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +106,7 @@
       <workItem from="1670059857856" duration="4757000" />
       <workItem from="1670356304737" duration="4375000" />
       <workItem from="1670361276381" duration="1747000" />
-      <workItem from="1670363054492" duration="3852000" />
+      <workItem from="1670363054492" duration="4237000" />
     </task>
     <servers />
   </component>

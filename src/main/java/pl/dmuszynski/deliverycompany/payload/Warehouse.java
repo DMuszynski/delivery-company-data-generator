@@ -5,11 +5,13 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
 
+import java.io.Serializable;
+
 @Getter
 @ToString
 @EqualsAndHashCode
 @AllArgsConstructor
-public class Warehouse {
+public class Warehouse implements Serializable {
     private final long idWarehouse;
     private final String street;
     private final String city;

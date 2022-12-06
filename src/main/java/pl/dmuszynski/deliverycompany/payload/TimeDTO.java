@@ -5,11 +5,13 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
 
+import java.io.Serializable;
+
 @Getter
 @ToString
 @EqualsAndHashCode
 @AllArgsConstructor
-public class TimeDTO {
+public class TimeDTO implements Serializable {
     private final long idTime;
     private final int day;
     private final int month;

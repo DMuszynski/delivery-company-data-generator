@@ -5,11 +5,13 @@ import lombok.ToString;
 import lombok.Builder;
 import lombok.Getter;
 
+import java.io.Serializable;
+
 @Getter
 @ToString
 @EqualsAndHashCode
 @Builder
-public class SenderDTO {
+public class SenderDTO implements Serializable {
     private final long idSender;
     private final String name;
     private final String lastname;
