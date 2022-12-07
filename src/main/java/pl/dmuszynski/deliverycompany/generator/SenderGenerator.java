@@ -17,7 +17,7 @@ public class SenderGenerator {
     public List<Sender> getRandomSenderList(int senderQuantity) {
         final List<Sender> randomSenderList = new ArrayList<>();
         for(int i = 0; i < senderQuantity; ++i)
-            randomSenderList.add(this.getRandomSender(i));
+            randomSenderList.add(this.getRandomSender(i+1));
         return randomSenderList;
     }
 }

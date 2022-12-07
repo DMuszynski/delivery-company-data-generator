@@ -10,6 +10,6 @@ import lombok.ToString;
 @EqualsAndHashCode
 @AllArgsConstructor
 public class Courier {
-    private final long idCourier;
+    private long idCourier;
     private Person person;
 }

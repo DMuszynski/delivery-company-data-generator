@@ -9,7 +9,7 @@ import java.util.List;
 public class PickupPointGenerator {
     private final AddressGenerator addressGenerator = new AddressGenerator();
 
-    public PickupPoint getRandomPickupPlace(long idPickupPlace) {
+    public PickupPoint getRandomPickupPoint(long idPickupPlace) {
         final Address randomAddress = addressGenerator.getRandomAddress();
         return new PickupPoint(idPickupPlace, randomAddress);
     }
@@ -17,7 +17,7 @@ public class PickupPointGenerator {
     public List<PickupPoint> getRandomPickupPointList(int pickupPointQuantity) {
         final List<PickupPoint> randomPickupPointList = new ArrayList<>();
         for(int i = 0; i < pickupPointQuantity; ++i)
-            randomPickupPointList.add(this.getRandomPickupPlace(i));
+            randomPickupPointList.add(this.getRandomPickupPoint(i+1));
         return randomPickupPointList;
     }
 }

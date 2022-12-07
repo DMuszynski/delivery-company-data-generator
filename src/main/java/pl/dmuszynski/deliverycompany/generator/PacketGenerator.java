@@ -39,7 +39,7 @@ public class PacketGenerator {
     public List<Packet> getRandomPacketList(int packetQuantity) {
         final List<Packet> randomPacketList = new ArrayList<>();
         for(int i = 0; i < packetQuantity; ++i)
-            randomPacketList.add(this.getRandomPacket(i));
+            randomPacketList.add(this.getRandomPacket(i+1));
         return randomPacketList;
     }
 }

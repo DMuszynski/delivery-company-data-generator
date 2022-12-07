@@ -32,7 +32,7 @@ public class VehicleGenerator {
     public List<Vehicle> getRandomVehicleList(int vehicleQuantity) {
         final List<Vehicle> randomVehicleList = new ArrayList<>(vehicleQuantity);
         for(int i = 0; i < vehicleQuantity; i++)
-            randomVehicleList.add(this.getRandomVehicle(i));
+            randomVehicleList.add(this.getRandomVehicle(i+1));
 
         return randomVehicleList;
     }

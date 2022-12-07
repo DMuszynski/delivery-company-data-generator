@@ -23,7 +23,7 @@ public class TimeGenerator {
     public List<Time> getRandomTimeList(int timeQuantity) {
         final List<Time> randomTimeList = new ArrayList<>();
         for(int i = 0; i < timeQuantity; ++i)
-            randomTimeList.add(this.getRandomTime(i));
+            randomTimeList.add(this.getRandomTime(i+1));
         return randomTimeList;
     }
 }

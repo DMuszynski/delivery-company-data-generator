@@ -17,7 +17,7 @@ public class ReceiverGenerator {
     public List<Receiver> getRandomReceiverList(int receiverQuantity) {
         final List<Receiver> randomReceiverList = new ArrayList<>();
         for(int i = 0; i < receiverQuantity; ++i)
-            randomReceiverList.add(this.getRandomReceiver(i));
+            randomReceiverList.add(this.getRandomReceiver(i+1));
         return randomReceiverList;
     }
 }

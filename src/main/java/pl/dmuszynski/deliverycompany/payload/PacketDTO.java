@@ -11,9 +11,9 @@ import java.io.Serializable;
 @Builder
 @ToString
 @EqualsAndHashCode
-public class PackageDTO implements Serializable {
+public class PacketDTO implements Serializable {
     private final long idPacket;
-    private final String packageType;
+    private final String packetType;
     private final String wrappingType;
     private final int length;
     private final int width;

@@ -11,7 +11,7 @@ import java.io.Serializable;
 @ToString
 @EqualsAndHashCode
 @AllArgsConstructor
-public class Warehouse implements Serializable {
+public class WarehouseDTO implements Serializable {
     private final long idWarehouse;
     private final String street;
     private final String city;

@@ -17,7 +17,7 @@ public class WarehouseGenerator {
     public List<Warehouse> getRandomWarehouseList(int warehouseQuantity) {
         final List<Warehouse> randomWarehouseList = new ArrayList<>();
         for(int i = 0; i < warehouseQuantity; ++i)
-            randomWarehouseList.add(this.getRandomWarehouse(i));
+            randomWarehouseList.add(this.getRandomWarehouse(i+1));
         return randomWarehouseList;
     }
 }
