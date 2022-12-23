@@ -10,7 +10,7 @@ import lombok.ToString;
 @EqualsAndHashCode
 @AllArgsConstructor
 public class Address {
-    private String street;
-    private String city;
-    private String buildingNumber;
+    private final String street;
+    private final String city;
+    private final String buildingNumber;
 }

@@ -15,8 +15,4 @@ public class PacketDTO implements Serializable {
     private final long idPacket;
     private final String packetType;
     private final String wrappingType;
-    private final int length;
-    private final int width;
-    private final int height;
-    private final int weight;
 }

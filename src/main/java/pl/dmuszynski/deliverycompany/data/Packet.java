@@ -1,18 +1,19 @@
 package pl.dmuszynski.deliverycompany.data;
 
-import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
 
 @Getter
 @ToString
-@EqualsAndHashCode
-@AllArgsConstructor
-public class Packet {
-    private long idPacket;
-    private String packetType;
-    private String wrappingType;
-    private Dimension dimension;
-    private int weight;
+@EqualsAndHashCode(callSuper = true)
+public class Packet extends AbstractEntity {
+    private final String packetType;
+    private final String wrappingType;
+
+    public Packet(long id, String packetType, String wrappingType) {
+        super(id);
+        this.packetType = packetType;
+        this.wrappingType = wrappingType;
+    }
 }

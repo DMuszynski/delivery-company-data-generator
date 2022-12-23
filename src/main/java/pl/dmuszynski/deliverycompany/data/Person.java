@@ -10,8 +10,8 @@ import lombok.ToString;
 @EqualsAndHashCode
 @AllArgsConstructor
 public class Person {
-    private String name;
-    private String lastname;
-    private String phone;
-    private Address address;
+    private final String name;
+    private final String lastname;
+    private final String phone;
+    private final Address address;
 }

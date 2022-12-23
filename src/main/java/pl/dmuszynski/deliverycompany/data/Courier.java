@@ -1,15 +1,17 @@
 package pl.dmuszynski.deliverycompany.data;
 
-import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
 
 @Getter
 @ToString
-@EqualsAndHashCode
-@AllArgsConstructor
-public class Courier {
-    private long idCourier;
-    private Person person;
+@EqualsAndHashCode(callSuper = true)
+public class Courier extends AbstractEntity{
+    private final Person person;
+
+    public Courier(long id, Person person) {
+        super(id);
+        this.person = person;
+    }
 }

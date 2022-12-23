@@ -3,15 +3,14 @@ package pl.dmuszynski.deliverycompany.data;
 import lombok.Getter;
 import lombok.ToString;
 import lombok.EqualsAndHashCode;
-import lombok.Builder;
+import lombok.experimental.SuperBuilder;
 
+@SuperBuilder
 @Getter
 @ToString
-@EqualsAndHashCode
-@Builder
-public class Delivery {
-    private long idDelivery;
-    private Packet packet;
+@EqualsAndHashCode(callSuper = true)
+public class Delivery extends AbstractEntity {
+    private final Packet packet;
     private Promotion promotion;
     private Time time;
     private Receiver receiver;
@@ -22,8 +21,9 @@ public class Delivery {
     private Courier courier;
     private Vehicle vehicle;
 
-    private int packetAmount;
-    private float deliveryCost;
     private float totalCost;
-    private float deliveryTime;
+    private float totalProfit;
+    private int packetAmount;
+    private int clientAmount;
+    private int employeeAmount;
 }

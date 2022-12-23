@@ -1,17 +1,21 @@
 package pl.dmuszynski.deliverycompany.data;
 
-import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
 
 @Getter
 @ToString
-@EqualsAndHashCode
-@AllArgsConstructor
-public class Vehicle {
-    private long idVehicle;
-    private String model;
-    private String brand;
-    private String vehicleType;
+@EqualsAndHashCode(callSuper = true)
+public class Vehicle extends AbstractEntity {
+    private final String model;
+    private final String brand;
+    private final String vehicleType;
+
+    public Vehicle(long id, String model, String brand, String vehicleType) {
+        super(id);
+        this.model = model;
+        this.brand = brand;
+        this.vehicleType = vehicleType;
+    }
 }

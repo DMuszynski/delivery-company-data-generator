@@ -1,18 +1,23 @@
 package pl.dmuszynski.deliverycompany.data;
 
-import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
 
 @Getter
 @ToString
-@EqualsAndHashCode
-@AllArgsConstructor
-public class Time {
-    private long idTime;
-    private int day;
-    private int month;
-    private int quarter;
-    private int year;
+@EqualsAndHashCode(callSuper = true)
+public class Time extends AbstractEntity {
+    private final int day;
+    private final int month;
+    private final int quarter;
+    private final int year;
+
+    public Time(long id, int day, int month, int quarter, int year) {
+        super(id);
+        this.day = day;
+        this.month = month;
+        this.quarter = quarter;
+        this.year = year;
+    }
 }

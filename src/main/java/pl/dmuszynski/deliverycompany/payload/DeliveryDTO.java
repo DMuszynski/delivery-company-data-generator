@@ -24,8 +24,9 @@ public class DeliveryDTO implements Serializable {
     private final long idCourier;
     private final long idVehicle;
 
-    private final int packetAmount;
-    private final float deliveryCost;
     private final float totalCost;
-    private final float deliveryTime;
+    private final float totalProfit;
+    private final int packetAmount;
+    private final float clientAmount;
+    private final float employeeAmount;
 }

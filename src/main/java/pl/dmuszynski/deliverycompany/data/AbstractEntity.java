@@ -4,13 +4,13 @@ import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
+import lombok.experimental.SuperBuilder;
 
+@SuperBuilder
 @Getter
 @ToString
 @EqualsAndHashCode
 @AllArgsConstructor
-public class Dimension {
-    private int length;
-    private int width;
-    private int height;
+public abstract class AbstractEntity {
+    private final long id;
 }

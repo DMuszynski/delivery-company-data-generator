@@ -51,6 +51,11 @@ public class DeliveryGenerator {
                     .pickupPoint(pickupPointList.get(random.nextInt(pickupPointList.size())))
                     .courier(courierList.get(random.nextInt(courierList.size())))
                     .vehicle(vehicleList.get(random.nextInt(vehicleList.size())))
+                    .totalCost(random.nextFloat(10000, 100000))
+                    .totalProfit(random.nextFloat(10000, 150000))
+                    .packetAmount(random.nextInt(1000, 5000))
+                    .clientAmount(random.nextInt(1000, 3000))
+                    .employeeAmount(random.nextInt(20, 100))
                     .build());
 
         return deliveryList;

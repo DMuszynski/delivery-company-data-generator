@@ -6,14 +6,13 @@ import lombok.ToString;
 
 @Getter
 @ToString
-@EqualsAndHashCode
-public class Promotion {
-    private final long idPromotion;
+@EqualsAndHashCode(callSuper = true)
+public class Promotion extends AbstractEntity {
     private final short percentValue;
     private final String promotionType;
 
-    public Promotion(long idPromotion, short percentValue, String promotionType) {
-        this.idPromotion = idPromotion;
+    public Promotion(long id, short percentValue, String promotionType) {
+        super(id);
         this.promotionType = promotionType;
         this.percentValue = this.setPercentValue(percentValue);
     }
