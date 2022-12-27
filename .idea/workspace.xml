@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db4ce15e-a225-4347-8c19-621ebbf9eccf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/csv/DataCsvWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/csv/DataCsvWriter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/csv/DeliveryCompanyCsvWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/csv/DeliveryCompanyCsvWriter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/mapper/ReceiverDTOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/mapper/ReceiverDTOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/mapper/SenderDTOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/mapper/SenderDTOMapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +104,7 @@
       <workItem from="1671128559185" duration="8000" />
       <workItem from="1671279556230" duration="4498000" />
       <workItem from="1671297845840" duration="1850000" />
-      <workItem from="1671782054282" duration="16110000" />
+      <workItem from="1671782054282" duration="16375000" />
     </task>
     <servers />
   </component>

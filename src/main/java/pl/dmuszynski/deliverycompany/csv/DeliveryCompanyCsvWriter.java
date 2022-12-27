@@ -3,16 +3,15 @@ package pl.dmuszynski.deliverycompany.csv;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import pl.dmuszynski.deliverycompany.data.Delivery;
-import pl.dmuszynski.deliverycompany.data.Packet;
-import pl.dmuszynski.deliverycompany.data.Receiver;
-import pl.dmuszynski.deliverycompany.data.Time;
+import pl.dmuszynski.deliverycompany.data.*;
 import pl.dmuszynski.deliverycompany.generator.DeliveryGenerator;
 import pl.dmuszynski.deliverycompany.mapper.PacketDTOMapper;
 import pl.dmuszynski.deliverycompany.mapper.ReceiverDTOMapper;
+import pl.dmuszynski.deliverycompany.mapper.SenderDTOMapper;
 import pl.dmuszynski.deliverycompany.mapper.TimeDTOMapper;
 import pl.dmuszynski.deliverycompany.payload.PacketDTO;
 import pl.dmuszynski.deliverycompany.payload.ReceiverDTO;
+import pl.dmuszynski.deliverycompany.payload.SenderDTO;
 import pl.dmuszynski.deliverycompany.payload.TimeDTO;
 
 import java.util.List;
@@ -43,6 +42,7 @@ public final class DeliveryCompanyCsvWriter{
         writePacketDataToCsv(deliveryList);
         writeTimeDataToCsv(deliveryList);
         writeReceiverDataToCsv(deliveryList);
+        writeSenderDataToCsv(deliveryList);
     }
 
     private void writePacketDataToCsv(List<Delivery> deliveryList) {
@@ -61,5 +61,11 @@ public final class DeliveryCompanyCsvWriter{
         final Set<Receiver> receiverSet = deliveryList.stream().map(Delivery::getReceiver).collect(Collectors.toSet());
         final DataCsvWriter<Receiver, ReceiverDTO> receiverDTOWriter = new DataCsvWriter<>();
         receiverDTOWriter.writeDataToCsv(receiverSet, ReceiverDTOMapper.INSTANCE, "receiver.csv", ReceiverDTO.class);
+    }
+
+    private void writeSenderDataToCsv(List<Delivery> deliveryList) {
+        final Set<Sender> senderSet = deliveryList.stream().map(Delivery::getSender).collect(Collectors.toSet());
+        final DataCsvWriter<Sender, SenderDTO> senderDTOWriter = new DataCsvWriter<>();
+        senderDTOWriter.writeDataToCsv(senderSet, SenderDTOMapper.INSTANCE, "sender.csv", SenderDTO.class);
     }
 }

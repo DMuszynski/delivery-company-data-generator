@@ -7,7 +7,7 @@ import pl.dmuszynski.deliverycompany.mapper.annotation.PersonMapping;
 import pl.dmuszynski.deliverycompany.payload.ReceiverDTO;
 
 @Mapper
-public interface ReceiverDTOMapper extends DataDTOMapper<Receiver, ReceiverDTO>{
+public interface ReceiverDTOMapper extends DataDTOMapper<Receiver, ReceiverDTO> {
     ReceiverDTOMapper INSTANCE = Mappers.getMapper(ReceiverDTOMapper.class);
 
     @PersonMapping
