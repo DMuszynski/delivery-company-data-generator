@@ -2,17 +2,16 @@ package pl.dmuszynski.deliverycompany.payload;
 
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
-import lombok.Builder;
 import lombok.Getter;
+import lombok.experimental.SuperBuilder;
 
 import java.io.Serializable;
 
 @Getter
-@Builder
+@SuperBuilder
 @ToString
-@EqualsAndHashCode
-public class PacketDTO implements Serializable {
-    private final long idPacket;
+@EqualsAndHashCode(callSuper = true)
+public class PacketDTO extends AbstractEntityDTO implements Serializable {
     private final String packetType;
     private final String wrappingType;
 }

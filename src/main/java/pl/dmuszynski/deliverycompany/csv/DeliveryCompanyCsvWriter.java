@@ -1,26 +1,25 @@
 package pl.dmuszynski.deliverycompany.csv;
 
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import pl.dmuszynski.deliverycompany.csv.datamapper.ObjectCsvFormatMapper;
 import pl.dmuszynski.deliverycompany.data.Delivery;
 import pl.dmuszynski.deliverycompany.data.Packet;
+import pl.dmuszynski.deliverycompany.data.Time;
 import pl.dmuszynski.deliverycompany.generator.DeliveryGenerator;
 import pl.dmuszynski.deliverycompany.mapper.PacketDTOMapper;
+import pl.dmuszynski.deliverycompany.mapper.TimeDTOMapper;
 import pl.dmuszynski.deliverycompany.payload.PacketDTO;
+import pl.dmuszynski.deliverycompany.payload.TimeDTO;
 
-import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 @Getter
-@Builder
 @NoArgsConstructor
-public final class DeliveryCompanyCsvWriter<E, DTO, M> {
+public final class DeliveryCompanyCsvWriter{
+
     private final int deliveryQuantity = 1000;
     private final int packetQuantity = 100;
     private final int timeQuantity = 100;
@@ -38,33 +37,19 @@ public final class DeliveryCompanyCsvWriter<E, DTO, M> {
                 .generateRandomDeliveryList(deliveryQuantity, packetQuantity, timeQuantity, receiverQuantity,
                         senderQuantity, warehouseQuantity, pickupPointQuantity, courierQuantity, vehicleQuantity);
 
-        final Stream<Delivery> deliveryStream = deliveryList.stream();
-        writePacketDataToCsv(deliveryStream.map(Delivery::getPacket).collect(Collectors.toSet()));
+        writePacketDataToCsv(deliveryList);
+        writeTimeDataToCsv(deliveryList);
     }
 
-    private void writePacketDataToCsv(Set<Packet> packetList) {
-        List<PacketDTO> packetDTOList = packetList
-                .stream()
-                .map(PacketDTOMapper.INSTANCE::mapToPacketDTO)
-                .sorted(Comparator.comparing(PacketDTO::getIdPacket))
-                .toList();
-
-        ObjectCsvFormatMapper<PacketDTO> packetCsvFormatMapper = new ObjectCsvFormatMapper<>();
-        final List<String[]> packetDataString = packetCsvFormatMapper.createCsvData(packetDTOList, PacketDTO.class);
-        OpenCsvWriter.writeDataToDefaultFolder(packetDataString, "packet.csv");
+    private void writePacketDataToCsv(List<Delivery> deliveryList) {
+        final Set<Packet> packetSet = deliveryList.stream().map(Delivery::getPacket).collect(Collectors.toSet());
+        final DataCsvWriter<Packet, PacketDTO> packetDTOWriter = new DataCsvWriter<>();
+        packetDTOWriter.writeDataToCsv(packetSet, PacketDTOMapper.INSTANCE, "packet.csv", PacketDTO.class);
     }
 
-
-//    private void writeDataToCsv(Set<E> dataObjectSet, Class<DTO> dtoClass, String filename) {
-//        Delivery d =  Delivery.builder().id(2).clientAmount(1).build();
-//        List<DTO> objectDTOList = dataObjectSet
-//                .stream()
-//                .map(M.INSTANCE::mapToDTO)
-//                .sorted(Comparator.comparing(PacketDTO::getIdPacket))
-//                .toList();
-//
-//        ObjectCsvFormatMapper<DTO> objectCsvFormatMapper = new ObjectCsvFormatMapper<>();
-//        final List<String[]> objectDataString = objectCsvFormatMapper.createCsvData(objectDTOList, dtoClass);
-//        OpenCsvWriter.writeDataToDefaultFolder(objectDataString, filename);
-//    }
+    private void writeTimeDataToCsv(List<Delivery> deliveryList) {
+        final Set<Time> timeSet = deliveryList.stream().map(Delivery::getTime).collect(Collectors.toSet());
+        final DataCsvWriter<Time, TimeDTO> timeDTOWriter = new DataCsvWriter<>();
+        timeDTOWriter.writeDataToCsv(timeSet, TimeDTOMapper.INSTANCE, "time.csv", TimeDTO.class);
+    }
 }

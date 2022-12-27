@@ -12,15 +12,15 @@ public interface DeliveryDTOMapper {
     DeliveryDTOMapper INSTANCE = Mappers.getMapper(DeliveryDTOMapper.class);
 
     @Mappings({
-            @Mapping(source = "packet.idPacket", target = "idPacket"),
-            @Mapping(source = "promotion.idPromotion", target = "idPromotion"),
-            @Mapping(source = "time.idTime", target = "idTime"),
-            @Mapping(source = "receiver.idReceiver", target = "idReceiver"),
-            @Mapping(source = "sender.idSender", target = "idSender"),
-            @Mapping(source = "supplier.idSupplier", target = "idSupplier"),
-            @Mapping(source = "warehouse.idWarehouse", target = "idWarehouse"),
-            @Mapping(source = "pickupPoint.idPickupPoint", target = "idPickupPoint"),
-            @Mapping(source = "courier.idCourier", target = "idCourier"),
-            @Mapping(source = "vehicle.idVehicle", target = "idVehicle")})
+            @Mapping(source = "packet.id", target = "idPacket"),
+            @Mapping(source = "promotion.id", target = "idPromotion"),
+            @Mapping(source = "time.id", target = "idTime"),
+            @Mapping(source = "receiver.id", target = "idReceiver"),
+            @Mapping(source = "sender.id", target = "idSender"),
+            @Mapping(source = "supplier.id", target = "idSupplier"),
+            @Mapping(source = "warehouse.id", target = "idWarehouse"),
+            @Mapping(source = "pickupPoint.id", target = "idPickupPoint"),
+            @Mapping(source = "courier.id", target = "idCourier"),
+            @Mapping(source = "vehicle.id", target = "idVehicle")})
     DeliveryDTO mapToDeliveryDTO(Delivery delivery);
 }

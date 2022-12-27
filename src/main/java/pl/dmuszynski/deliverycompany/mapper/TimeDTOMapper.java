@@ -6,8 +6,6 @@ import pl.dmuszynski.deliverycompany.data.Time;
 import pl.dmuszynski.deliverycompany.payload.TimeDTO;
 
 @Mapper
-public interface TimeDTOMapper {
+public interface TimeDTOMapper extends DataDTOMapper<Time, TimeDTO>{
     TimeDTOMapper INSTANCE = Mappers.getMapper(TimeDTOMapper.class);
-
-    TimeDTO mapToTimeDTO(Time time);
 }

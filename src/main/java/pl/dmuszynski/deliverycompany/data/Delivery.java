@@ -11,19 +11,19 @@ import lombok.experimental.SuperBuilder;
 @EqualsAndHashCode(callSuper = true)
 public class Delivery extends AbstractEntity {
     private final Packet packet;
-    private Promotion promotion;
-    private Time time;
-    private Receiver receiver;
-    private Sender sender;
-    private Supplier supplier;
-    private Warehouse warehouse;
-    private PickupPoint pickupPoint;
-    private Courier courier;
-    private Vehicle vehicle;
+    private final Promotion promotion;
+    private final Time time;
+    private final Receiver receiver;
+    private final Sender sender;
+    private final Supplier supplier;
+    private final Warehouse warehouse;
+    private final PickupPoint pickupPoint;
+    private final Courier courier;
+    private final Vehicle vehicle;
 
-    private float totalCost;
-    private float totalProfit;
-    private int packetAmount;
-    private int clientAmount;
-    private int employeeAmount;
+    private final float totalCost;
+    private final float totalProfit;
+    private final int packetAmount;
+    private final int clientAmount;
+    private final int employeeAmount;
 }

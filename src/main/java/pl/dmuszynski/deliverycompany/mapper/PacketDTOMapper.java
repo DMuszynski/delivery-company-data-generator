@@ -6,8 +6,6 @@ import pl.dmuszynski.deliverycompany.data.Packet;
 import pl.dmuszynski.deliverycompany.payload.PacketDTO;
 
 @Mapper
-public interface PacketDTOMapper {
+public interface PacketDTOMapper extends DataDTOMapper<Packet, PacketDTO> {
     PacketDTOMapper INSTANCE = Mappers.getMapper(PacketDTOMapper.class);
-
-    PacketDTO mapToPacketDTO(Packet packet);
 }

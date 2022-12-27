@@ -1,18 +1,17 @@
 package pl.dmuszynski.deliverycompany.payload;
 
-import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
+import lombok.experimental.SuperBuilder;
 
 import java.io.Serializable;
 
 @Getter
 @ToString
-@EqualsAndHashCode
-@AllArgsConstructor
-public class SupplierDTO implements Serializable {
-    private final long idSupplier;
+@SuperBuilder
+@EqualsAndHashCode(callSuper = true)
+public class SupplierDTO extends AbstractEntityDTO implements Serializable {
     private final String name;
     private final String NIP;
 }
