@@ -5,11 +5,14 @@ import lombok.NoArgsConstructor;
 
 import pl.dmuszynski.deliverycompany.data.Delivery;
 import pl.dmuszynski.deliverycompany.data.Packet;
+import pl.dmuszynski.deliverycompany.data.Receiver;
 import pl.dmuszynski.deliverycompany.data.Time;
 import pl.dmuszynski.deliverycompany.generator.DeliveryGenerator;
 import pl.dmuszynski.deliverycompany.mapper.PacketDTOMapper;
+import pl.dmuszynski.deliverycompany.mapper.ReceiverDTOMapper;
 import pl.dmuszynski.deliverycompany.mapper.TimeDTOMapper;
 import pl.dmuszynski.deliverycompany.payload.PacketDTO;
+import pl.dmuszynski.deliverycompany.payload.ReceiverDTO;
 import pl.dmuszynski.deliverycompany.payload.TimeDTO;
 
 import java.util.List;
@@ -39,6 +42,7 @@ public final class DeliveryCompanyCsvWriter{
 
         writePacketDataToCsv(deliveryList);
         writeTimeDataToCsv(deliveryList);
+        writeReceiverDataToCsv(deliveryList);
     }
 
     private void writePacketDataToCsv(List<Delivery> deliveryList) {
@@ -51,5 +55,11 @@ public final class DeliveryCompanyCsvWriter{
         final Set<Time> timeSet = deliveryList.stream().map(Delivery::getTime).collect(Collectors.toSet());
         final DataCsvWriter<Time, TimeDTO> timeDTOWriter = new DataCsvWriter<>();
         timeDTOWriter.writeDataToCsv(timeSet, TimeDTOMapper.INSTANCE, "time.csv", TimeDTO.class);
+    }
+
+    private void writeReceiverDataToCsv(List<Delivery> deliveryList) {
+        final Set<Receiver> receiverSet = deliveryList.stream().map(Delivery::getReceiver).collect(Collectors.toSet());
+        final DataCsvWriter<Receiver, ReceiverDTO> receiverDTOWriter = new DataCsvWriter<>();
+        receiverDTOWriter.writeDataToCsv(receiverSet, ReceiverDTOMapper.INSTANCE, "receiver.csv", ReceiverDTO.class);
     }
 }

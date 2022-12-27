@@ -9,7 +9,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
 
-public class DataCsvWriter<D extends AbstractEntity, DTO extends AbstractEntityDTO> {
+public final class DataCsvWriter<D extends AbstractEntity, DTO extends AbstractEntityDTO> {
 
     public void writeDataToCsv(Set<D> entityList, DataDTOMapper<D, DTO> dataDTOMapper, String filename, Class<DTO> type) {
         // Map entity list to sorted by id DTO entity list
