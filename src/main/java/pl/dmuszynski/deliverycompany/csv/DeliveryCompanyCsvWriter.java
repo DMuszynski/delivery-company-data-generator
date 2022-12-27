@@ -38,6 +38,7 @@ public final class DeliveryCompanyCsvWriter{
         writeReceiverDataToCsv(deliveryList);
         writeSenderDataToCsv(deliveryList);
         writeWarehouseDataToCsv(deliveryList);
+        writePickupPointDataToCsv(deliveryList);
     }
 
     private void writePacketDataToCsv(List<Delivery> deliveryList) {
@@ -68,5 +69,11 @@ public final class DeliveryCompanyCsvWriter{
         final Set<Warehouse> warehouseSet = deliveryList.stream().map(Delivery::getWarehouse).collect(Collectors.toSet());
         final DataCsvWriter<Warehouse, WarehouseDTO> warehouseDTOWriter = new DataCsvWriter<>();
         warehouseDTOWriter.writeDataToCsv(warehouseSet, WarehouseDTOMapper.INSTANCE, "warehouse.csv", WarehouseDTO.class);
+    }
+
+    private void writePickupPointDataToCsv(List<Delivery> deliveryList) {
+        final Set<PickupPoint> pickupPointSet = deliveryList.stream().map(Delivery::getPickupPoint).collect(Collectors.toSet());
+        final DataCsvWriter<PickupPoint, PickupPointDTO> pickupPointDTOWriter = new DataCsvWriter<>();
+        pickupPointDTOWriter.writeDataToCsv(pickupPointSet, PickupPointDTOMapper.INSTANCE, "pickupPoint.csv", PickupPointDTO.class);
     }
 }
