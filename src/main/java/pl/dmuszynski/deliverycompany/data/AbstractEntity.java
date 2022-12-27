@@ -3,12 +3,10 @@ package pl.dmuszynski.deliverycompany.data;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
-import lombok.ToString;
 import lombok.experimental.SuperBuilder;
 
-@SuperBuilder
 @Getter
-@ToString
+@SuperBuilder
 @EqualsAndHashCode
 @AllArgsConstructor
 public abstract class AbstractEntity {

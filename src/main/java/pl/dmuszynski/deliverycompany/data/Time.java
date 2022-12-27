@@ -2,10 +2,8 @@ package pl.dmuszynski.deliverycompany.data;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
-import lombok.ToString;
 
 @Getter
-@ToString
 @EqualsAndHashCode(callSuper = true)
 public class Time extends AbstractEntity {
     private final int day;

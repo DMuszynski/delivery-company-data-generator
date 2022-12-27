@@ -2,10 +2,8 @@ package pl.dmuszynski.deliverycompany.data;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
-import lombok.ToString;
 
 @Getter
-@ToString
 @EqualsAndHashCode(callSuper = true)
 public class Vehicle extends AbstractEntity {
     private final String model;

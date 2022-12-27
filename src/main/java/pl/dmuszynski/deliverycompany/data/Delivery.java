@@ -1,13 +1,11 @@
 package pl.dmuszynski.deliverycompany.data;
 
 import lombok.Getter;
-import lombok.ToString;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.SuperBuilder;
 
-@SuperBuilder
 @Getter
-@ToString
+@SuperBuilder
 @EqualsAndHashCode(callSuper = true)
 public class Delivery extends AbstractEntity {
     private final Packet packet;

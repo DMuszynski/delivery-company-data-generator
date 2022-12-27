@@ -2,10 +2,8 @@ package pl.dmuszynski.deliverycompany.data;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
-import lombok.ToString;
 
 @Getter
-@ToString
 @EqualsAndHashCode(callSuper = true)
 public class Courier extends AbstractEntity{
     private final Person person;
