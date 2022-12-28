@@ -10,7 +10,9 @@ public class VehicleGenerator {
     private final Random random = new Random();
 
     private final String[] models = {
-            "Audi",
+            "A1", "A2", "A3", "A4", "Q1", "Q2", "Q3",
+            "Duster", "Logan", "Jumper", "DS3", "DS4", "Berlingo", "Nemo",
+            "16i", "316i", "318", "330 Coupe", "Q1", "M 140i", "X5 Hybrid"
     };
     private final String[] brands = {
             "Audi", "BMW", "Citroen", "Dacia", "Fiat",

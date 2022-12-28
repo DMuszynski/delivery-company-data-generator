@@ -40,7 +40,7 @@ public class DeliveryGenerator {
 
         for(int i = 0; i < deliveryQuantity; ++i)
             deliveryList.add(Delivery.builder()
-                    .id(i)
+                    .id(i+1)
                     .packet(packetList.get(random.nextInt(packetList.size())))
                     .promotion(promotionList.get(random.nextInt(promotionList.size())))
                     .time(timeList.get(random.nextInt(timeList.size())))

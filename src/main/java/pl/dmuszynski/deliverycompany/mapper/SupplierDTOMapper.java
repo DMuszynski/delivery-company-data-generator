@@ -6,8 +6,6 @@ import pl.dmuszynski.deliverycompany.data.Supplier;
 import pl.dmuszynski.deliverycompany.payload.SupplierDTO;
 
 @Mapper
-public interface SupplierDTOMapper {
+public interface SupplierDTOMapper extends DataDTOMapper<Supplier, SupplierDTO> {
     SupplierDTOMapper INSTANCE = Mappers.getMapper(SupplierDTOMapper.class);
-
-    SupplierDTO mapToSupplierDTO(Supplier supplier);
 }

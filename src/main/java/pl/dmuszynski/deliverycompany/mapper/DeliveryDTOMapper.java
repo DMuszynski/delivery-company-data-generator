@@ -8,7 +8,7 @@ import pl.dmuszynski.deliverycompany.data.Delivery;
 import pl.dmuszynski.deliverycompany.payload.DeliveryDTO;
 
 @Mapper
-public interface DeliveryDTOMapper {
+public interface DeliveryDTOMapper extends DataDTOMapper<Delivery, DeliveryDTO>{
     DeliveryDTOMapper INSTANCE = Mappers.getMapper(DeliveryDTOMapper.class);
 
     @Mappings({
@@ -22,5 +22,5 @@ public interface DeliveryDTOMapper {
             @Mapping(source = "pickupPoint.id", target = "idPickupPoint"),
             @Mapping(source = "courier.id", target = "idCourier"),
             @Mapping(source = "vehicle.id", target = "idVehicle")})
-    DeliveryDTO mapToDeliveryDTO(Delivery delivery);
+    DeliveryDTO mapToDTO(Delivery delivery);
 }

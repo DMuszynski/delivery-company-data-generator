@@ -8,6 +8,7 @@ import pl.dmuszynski.deliverycompany.generator.DeliveryGenerator;
 import pl.dmuszynski.deliverycompany.mapper.*;
 import pl.dmuszynski.deliverycompany.payload.*;
 
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -39,6 +40,11 @@ public final class DeliveryCompanyCsvWriter{
         writeSenderDataToCsv(deliveryList);
         writeWarehouseDataToCsv(deliveryList);
         writePickupPointDataToCsv(deliveryList);
+        writeCourierDataToCsv(deliveryList);
+        writeVehicleDataToCsv(deliveryList);
+        writePromotionDataToCsv(deliveryList);
+        writeSupplierDataToCsv(deliveryList);
+        writeDeliveryDataToCsv(deliveryList);
     }
 
     private void writePacketDataToCsv(List<Delivery> deliveryList) {
@@ -75,5 +81,35 @@ public final class DeliveryCompanyCsvWriter{
         final Set<PickupPoint> pickupPointSet = deliveryList.stream().map(Delivery::getPickupPoint).collect(Collectors.toSet());
         final DataCsvWriter<PickupPoint, PickupPointDTO> pickupPointDTOWriter = new DataCsvWriter<>();
         pickupPointDTOWriter.writeDataToCsv(pickupPointSet, PickupPointDTOMapper.INSTANCE, "pickupPoint.csv", PickupPointDTO.class);
+    }
+
+    private void writeCourierDataToCsv(List<Delivery> deliveryList) {
+        final Set<Courier> courierSet = deliveryList.stream().map(Delivery::getCourier).collect(Collectors.toSet());
+        final DataCsvWriter<Courier, CourierDTO> courierDTOWriter = new DataCsvWriter<>();
+        courierDTOWriter.writeDataToCsv(courierSet, CourierDTOMapper.INSTANCE, "courier.csv", CourierDTO.class);
+    }
+
+    private void writeVehicleDataToCsv(List<Delivery> deliveryList) {
+        final Set<Vehicle> vehicleSet = deliveryList.stream().map(Delivery::getVehicle).collect(Collectors.toSet());
+        final DataCsvWriter<Vehicle, VehicleDTO> vehicleDTOWriter = new DataCsvWriter<>();
+        vehicleDTOWriter.writeDataToCsv(vehicleSet, VehicleDTOMapper.INSTANCE, "vehicle.csv", VehicleDTO.class);
+    }
+
+    private void writePromotionDataToCsv(List<Delivery> deliveryList) {
+        final Set<Promotion> promotionSet = deliveryList.stream().map(Delivery::getPromotion).collect(Collectors.toSet());
+        final DataCsvWriter<Promotion, PromotionDTO> promotionDTOWriter = new DataCsvWriter<>();
+        promotionDTOWriter.writeDataToCsv(promotionSet, PromotionDTOMapper.INSTANCE, "promotion.csv", PromotionDTO.class);
+    }
+
+    private void writeSupplierDataToCsv(List<Delivery> deliveryList) {
+        final Set<Supplier> supplierSet = deliveryList.stream().map(Delivery::getSupplier).collect(Collectors.toSet());
+        final DataCsvWriter<Supplier, SupplierDTO> supplierDTOWriter = new DataCsvWriter<>();
+        supplierDTOWriter.writeDataToCsv(supplierSet, SupplierDTOMapper.INSTANCE, "supplier.csv", SupplierDTO.class);
+    }
+
+    private void writeDeliveryDataToCsv(List<Delivery> deliveryList) {
+        final Set<Delivery> deliverySet = new HashSet<>(deliveryList);
+        final DataCsvWriter<Delivery, DeliveryDTO> deliveryDTOWriter = new DataCsvWriter<>();
+        deliveryDTOWriter.writeDataToCsv(deliverySet, DeliveryDTOMapper.INSTANCE, "delivery.csv", DeliveryDTO.class);
     }
 }

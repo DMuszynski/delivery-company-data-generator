@@ -6,8 +6,6 @@ import pl.dmuszynski.deliverycompany.data.Vehicle;
 import pl.dmuszynski.deliverycompany.payload.VehicleDTO;
 
 @Mapper
-public interface VehicleDTOMapper {
+public interface VehicleDTOMapper extends DataDTOMapper<Vehicle, VehicleDTO> {
     VehicleDTOMapper INSTANCE = Mappers.getMapper(VehicleDTOMapper.class);
-
-    VehicleDTO mapToVehicleDTO(Vehicle vehicle);
 }
