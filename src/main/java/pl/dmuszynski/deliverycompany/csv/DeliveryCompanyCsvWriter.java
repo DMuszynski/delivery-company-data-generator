@@ -17,15 +17,15 @@ import java.util.stream.Collectors;
 @NoArgsConstructor
 public final class DeliveryCompanyCsvWriter{
 
-    private final int deliveryQuantity = 1000;
-    private final int packetQuantity = 100;
-    private final int timeQuantity = 100;
-    private final int receiverQuantity = 100;
-    private final int senderQuantity = 100;
-    private final int warehouseQuantity = 100;
-    private final int pickupPointQuantity = 100;
-    private final int courierQuantity = 100;
-    private final int vehicleQuantity = 100;
+    private final int deliveryQuantity = 100000;
+    private final int packetQuantity = 1000;
+    private final int timeQuantity = 1000;
+    private final int receiverQuantity = 1000;
+    private final int senderQuantity = 1000;
+    private final int warehouseQuantity = 1000;
+    private final int pickupPointQuantity = 1000;
+    private final int courierQuantity = 1000;
+    private final int vehicleQuantity = 1000;
 
     private final DeliveryGenerator deliveryGenerator = new DeliveryGenerator();
 
