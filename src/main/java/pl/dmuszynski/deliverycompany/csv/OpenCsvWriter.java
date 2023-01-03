@@ -4,6 +4,8 @@ import com.opencsv.CSVWriter;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.List;
 
 public final class OpenCsvWriter {
@@ -16,6 +18,7 @@ public final class OpenCsvWriter {
     }
 
     public static void writeData(List<String[]> csvData, String path, String filename) {
+
         try (CSVWriter writer = new CSVWriter(new FileWriter(path + filename))) {
             writer.writeAll(csvData);
         } catch (IOException e) {

@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db4ce15e-a225-4347-8c19-621ebbf9eccf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/csv/DeliveryCompanyCsvWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/csv/DeliveryCompanyCsvWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/AddressGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/AddressGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/csv/OpenCsvWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/csv/OpenCsvWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/TimeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/dmuszynski/deliverycompany/generator/TimeGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/csv/time.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/csv/time.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +109,9 @@
       <workItem from="1671782054282" duration="17902000" />
       <workItem from="1672216472186" duration="2220000" />
       <workItem from="1672219131334" duration="353000" />
-      <workItem from="1672416349045" duration="4049000" />
+      <workItem from="1672416349045" duration="5007000" />
+      <workItem from="1672646627048" duration="6604000" />
+      <workItem from="1672772065247" duration="83000" />
     </task>
     <servers />
   </component>

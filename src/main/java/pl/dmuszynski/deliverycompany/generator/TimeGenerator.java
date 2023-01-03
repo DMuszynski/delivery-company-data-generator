@@ -14,7 +14,7 @@ public class TimeGenerator {
         gc.setTime(randomDate);
 
         int randomDay = gc.get(Calendar.DAY_OF_MONTH);
-        int randomMonth = gc.get(Calendar.MONTH);
+        int randomMonth = gc.get(Calendar.MONTH) + 1;
         int randomQuarter = (gc.get(Calendar.MONTH) / 3) + 1;
         int randomYear = gc.get(Calendar.YEAR);
         return new Time(idTime, randomDay, randomMonth, randomQuarter, randomYear);
