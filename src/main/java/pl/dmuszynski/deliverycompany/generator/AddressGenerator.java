@@ -9,7 +9,7 @@ import java.util.Random;
 public class AddressGenerator {
 
     public Address getRandomAddress(){
-        final Faker faker = new Faker(new Locale("pl-PL"));
+        final Faker faker = new Faker(new Locale("en-EN"));
         final String randomStreet = faker.address().streetAddress();
         final String randomCity = faker.address().cityName();
         final String randomBuildingNumber = String.valueOf(new Random().nextInt(100));

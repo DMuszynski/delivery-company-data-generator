@@ -9,7 +9,7 @@ public class PersonGenerator {
     private final AddressGenerator addressGenerator = new AddressGenerator();
 
     public Person getRandomPerson() {
-        final Faker faker = new Faker(new Locale("pl-PL"));
+        final Faker faker = new Faker(new Locale("en-EN"));
         final String randomName = faker.name().firstName();
         final String randomLastname = faker.name().lastName();
         final String randomPhoneNumber = faker.phoneNumber().phoneNumber();
